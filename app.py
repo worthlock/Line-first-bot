@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 from flask import Flask, request, abort
 
 from linebot.v3 import (
@@ -59,7 +58,7 @@ from linebot.v3.webhooks import (
 import requests
 import json
 import os
-load_dotenv()
+
 app = Flask(__name__)
 
 channel_secret = os.getenv('CHANNEL_SECRET')
